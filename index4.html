@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/glyphpack/45/edit-alt-512.png" type="image/x-icon">
+  <title>Edit Data</title>
+  <style>
+body
+{
+    background-image: url('https://wallpapercave.com/wp/wp2914472.jpg'); 
+    background-size: cover;
+}
+
+a
+{
+  text-decoration: none;
+  color: aqua;
+}
+
+.space
+{
+  padding: -10px;
+}
+
+.headbar
+{
+  text-align: center;
+}
+
+.headbar
+{
+  text-align: center;
+  padding: 25px;
+}
+
+.headbar ul li
+{
+  background-color: black;
+    list-style-type: none;
+    display:inline;
+    padding: 10px;
+}
+
+.head
+{
+  text-align: center;
+  color: black;
+  width: 100%;
+  background-color: white;
+}
+
+.table-app
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cyan;
+    color: black;
+}
+
+.update
+{
+  text-align: center;
+  margin: auto;
+}
+
+#Applicants
+{
+  width: 395px;
+  height: 25px;
+}
+
+#Category
+{
+  width: 395px;
+  height: 25px;
+}
+#Company
+{
+  width: 395px;
+  height: 25px;
+}
+#Job
+{
+  width: 395px;
+  height: 25px;
+}
+#Location
+{
+  width: 395px;
+  height: 25px;
+}
+#Type
+{
+  width: 395px;
+  height: 25px;
+}
+
+#User
+{
+  width: 395px;
+  height: 25px;
+}
+
+#submit-btn
+{
+  width: 405px;
+  height: 25px;
+  background-color: aqua;
+}
+table button{
+  background-color: black;
+  color: aqua;
+  padding: 10px;
+  border-radius: 55px;
+}
+
+.update{
+  display: none;
+}
+</style>
+</head>
+<body>
+  <div id="applicant-data"> </div>
+
+  <div class="head">
+  <h2> Update/Delete Data </h2>
+  </div>
+
+  <div class="space"></div>
+
+  <nav class='headbar'>
+    <ul>
+      <li><a href="index2.html" target="_blank">Create</a></li>
+      <li><a href="index4.html" target="_blank">Update</a></li>
+      <li><a href="index4.html" target="_blank">Delete</a></li>
+      <li><a href="index5.html" target="_blank">Insert</a></li>
+    </ul>
+  </nav>
+
+
+  <table border="8" cellspacing="7" cellpadding="7" class="table-app">   
+    <tr>
+           <td> Applicants </td>
+           <td> Category </td>
+           <td> Company </td>
+           <td> Job </td>
+           <td> Location </td>
+           <td> Type </td>
+           <td> User </td>
+      </td>
+    </tr>
+</table>
+<br>
+<br>
+<div class="update">
+<form action="http://localhost/JOBB/update.php" method="POST">
+  <input id="Applicants" name="Applicants" type="text" placeholder="Applicants"> <br>
+  <input id="Category" name="Category" type="text" placeholder="Category"> <br> 
+  <input id="Company" name="Company" type="text" placeholder="Company"> <br>
+  <input id="Job" name="Job" type="text" placeholder="Job"> <br>
+  <input id="Location" name="Location" type="text" placeholder="Location"> <br> 
+  <input id="Type" name="Type" type="text" placeholder="Type"> <br>
+  <input id="User" name="User" type="text" placeholder="User"> <br>
+  <button  id="submit-btn" type="submit">Submit</button>
+</form>
+</div>
+<script src="index4.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
